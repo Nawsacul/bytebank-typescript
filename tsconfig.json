@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "ES2022", //* versão do ecma
+        "outDir": "./dist/js/", //* diretorio para mandar o arquivo transpilado
+        "noEmitOnError": true //* Não emitir o arquivo se houve erro
+    },
+    "include": [
+        "./src/**/*" //* as pastas onde ele vai procurar todos os arquivos typescript
+    ]
+}

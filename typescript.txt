@@ -1,0 +1,36 @@
+// Tipos Primitivos
+let valor: number = 3000;
+let nome: string = "0";
+let isPago: boolean = false;
+let qualquer: any = "";
+qualquer = 22;
+
+// Arrays
+const listaAny = [];
+listaAny.push("valor", 1, true, []);
+
+const lista: number[] = [];
+lista.push(1, 11, 24, 28, 51);
+
+// Tipos Personalizados (Type Alias)
+type Transacao = {
+  tipoTransacao: TipoTransacao;
+  data: Date;
+  valor: number;
+};
+
+// Enum
+
+enum TipoTransacao {
+  DEPOSITO = "Depósito",
+  TRANSFERENCIA = "Transferência",
+  PAGAMENTO_BOLETO = "Pagamento de Boleto",
+}
+
+const novaTransacao: Transacao = {
+  tipoTransacao: TipoTransacao.PAGAMENTO_BOLETO,
+  data: new Date(),
+  valor: 0,
+};
+
+console.log(novaTransacao);
